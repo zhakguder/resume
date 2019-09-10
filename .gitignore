@@ -2,4 +2,4 @@
 *
 # but these
 !.gitignore
-!*.pdf
+!*resume*.pdf
