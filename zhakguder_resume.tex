@@ -1,0 +1,185 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rishi Shah
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
+% Document margins
+\usepackage{fontawesome}
+\usepackage{comment}
+\usepackage{hyperref}
+\usepackage{enumerate}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\newenvironment{cvEnum}
+{ \begin{enumerate}[]
+    \setlength{\itemsep}{0pt}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0pt}     }
+{ \end{enumerate}                  }
+\name{Zeynep Hakguder} % Your name
+\address{\faHome \hspace{0.1em} 539 N 24th St Apt 19, Lincoln, NE 68503}
+\address{\faMobile \hspace{0.1em}  +1 (402) 853-9069 \\ \faEnvelope  \hspace{0.1em}  \href{mailto:zphakguder@gmail.com}{zphakguder@gmail.com}} % Your
+\address{\faGithub \hspace{0.1em}  \href{https://github.com/zhakguder}{zhakguder}}
+
+
+\begin{document}
+\begin{rSection}{Profile}
+  This is me
+  \end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+  {\bf University of Nebraska-Lincoln} \hfill { August 2017 - May
+    2020} (Expected) 
+\\ PhD in Computer Science, {\em Machine Learning Specialization} \hfill { Cumulative GPA: 3.969 }
+
+                        \small{
+\begin{tabular}{cc}
+{\bf Related Courses} &
+                        
+\begin{tabular}{lll}
+  {\em Deep Learning} & {\em Machine Learning} & {\em Probability} \\
+Pattern Recognition & Introduction to Machine Learning & Probability Theory\\
+Seminar in Deep Learning & Computational Intelligence & Statistical Methods\\
+     & Algorithms for Large Scale Data  & Multivariate Statistics\\
+\end{tabular}
+\end{tabular}
+                        }
+\end{rSection}
+
+\begin{rSection}{Experience}
+{\bf Teaching Assistant}\hfill {\em Fall 2017 ---}
+\begin{cvEnum}
+\item Design and Analysis of Algorithms, Introduction to Machine
+  Learning, Data Structures and Algorithms, Introduction to Python Programming  
+\end{cvEnum}
+{\bf Research Assistant} \hfill {\em January 2017-May 2018}
+\begin{cvEnum}
+\item SBBI Lab, Department of Computer Science and Engineering
+    \end{cvEnum}
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{SKILLS}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Programming Languages \ & Python, JavaScript \\
+Scripting Languages \ & Bash, AWK, sed, \LaTeX, SQL \\
+Deep Learning Libraries \ & Pytorch, TensorFlow, Keras \\
+Machine Learning \& Data Manipulation Libraries \ & Scikit-Learn, Pandas, NumPy \\
+Visualization \ & Matplotlib, Seaborn\\
+Operating Systems \ & Linux\\
+Scientific Computing \& Containerization \ & OSG, Docker \\
+Software \& Tools \ & Emacs, Jupyter Notebooks \\
+Database Systems \ & MySQL, MongoDB \\
+Web Technologies \ & Node, Express, React, Redux, REST\\
+  Native \ & React Native
+
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Projects}
+{\bf Research Projects}
+\begin{cvEnum}
+\item {\em Computer Vision:}
+ Develop and implement deep methods for computational jigsaw
+       puzzle solving. (\textbf{TDD, Python, OpenCV})
+
+     \item {\em Biological molecule target prediction:} Predicted
+      binding interactions between biological molecules with Gaussian
+      Mixture Models using \textbf{Scikit-Learn \& Pandas}. Decreased model training time about 50{$\times$}
+      using
+      \textbf{distributed computing} (OSG) \textbf{Docker}
+
+
+    \item {\em Deep similarity search:} Develop and implement methods
+      to find similarity preserving embeddings of data using
+      locality-sensitive hashing. (\textbf{TensorFlow \& Keras})
+
+    \item {\em Deep Generative Models for Optimization Problems}: (Ongoing) Develop and implement methods to solve optimization problems. (\textbf{PyTorch, TensorFlow})
+
+
+\end{cvEnum}
+{\bf Side Projects}
+
+{\em Machine Learning}
+%    {\em Web technologies}
+%    \begin{cvEnum}
+%    \item Virtual drum set, Simon game
+%    \end{cvEnum}
+{\em Web \& Native Applications}
+\begin{cvEnum}
+  \item ToDo List
+  \item Games: Pong, Simon, Game of Life, Matching Game (\textbf{React, Redux})
+  \item Location-based job search app  (\textbf{React Native, Redux})
+
+      \end{cvEnum}
+\begin{cvEnum}
+    \item Naive Bayes Classifier, Decision Tree Classifier (ID3)
+    \item Document similarity using Locality Sensitive Hashing
+    \end{cvEnum}
+
+
+\end{rSection}
+
+
+
+
+%\begin{rSection}{Relevant Courses}
+%{\em UNL}\\
+%{\em MOOC (Coursera)}\\
+%Improving Deep Neural Networks, Structuring Machine Learning Projects
+%\end{rSection}
+
+
+\begin{rSection}{Accomplishments, Service \& Leadership}
+
+Workshop Co-organizer, \href
+    {http://sbbi-panda.unl.edu/bibm2019/} {IRLB@IEEE BIBM,} {\em San Diego} \hfill{\em Nov 18-21 2019}\\
+Workshop Co-organizer, Support Vector Machines, UNMC, {\em Omaha} \hfill{\em 2019}\\
+Oral Presentation @IEEE BIBM, {\em Kansas City} \hfill{\em 2017}\\
+Subreviewer, IJCAI \hfill {\em 2018 ---}\\
+3 peer-reviewed articles in journals and conferences, 1 preprint\\
+Head Teaching Assistant, {\em Design and Analysis of Algorithms}
+\hfill {\em August 2018 ---}\\
+\end{rSection}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
