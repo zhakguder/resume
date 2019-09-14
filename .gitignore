@@ -1,5 +1,0 @@
-# ignore all
-*
-# but these
-!.gitignore
-!*resume*.pdf
