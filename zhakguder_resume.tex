@@ -28,6 +28,7 @@
 \usepackage{comment}
 \usepackage{hyperref}
 \usepackage{enumerate}
+\usepackage{comment}
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \newenvironment{cvEnum}
@@ -38,14 +39,13 @@
 { \end{enumerate}                  }
 \name{Zeynep Hakguder} % Your name
 \address{\faHome \hspace{0.1em} 539 N 24th St Apt 19, Lincoln, NE 68503}
-\address{\faMobile \hspace{0.1em}  +1 (402) 853-9069 \\ \faEnvelope  \hspace{0.1em}  \href{mailto:zphakguder@gmail.com}{zphakguder@gmail.com}} % Your
-\address{\faGithub \hspace{0.1em}  \href{https://github.com/zhakguder}{zhakguder}}
+\address{\faMobile \hspace{0.1em}  +1 (531) 218-8301 \\ \faEnvelope
+  \hspace{0.1em}
+  \href{mailto:zphakguder@gmail.com}{zphakguder@gmail.com} \\ 
+ \faGithub \hspace{0.1em}  \href{https://github.com/zhakguder}{zhakguder}}
 
 
 \begin{document}
-\begin{rSection}{Profile}
-  This is me
-  \end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -55,14 +55,14 @@
 
   {\bf University of Nebraska-Lincoln} \hfill { August 2017 - May
     2020} (Expected) 
-\\ PhD in Computer Science, {\em Machine Learning Specialization} \hfill { Cumulative GPA: 3.969 }
+\\ PhD in Computer Science
 
                         \small{
 \begin{tabular}{cc}
 {\bf Related Courses} &
                         
 \begin{tabular}{lll}
-  {\em Deep Learning} & {\em Machine Learning} & {\em Probability} \\
+  \textbf{{\em Deep Learning}} & \textbf{{\em Machine Learning}} & \textbf{{\em Probability}} \\
 Pattern Recognition & Introduction to Machine Learning & Probability Theory\\
 Seminar in Deep Learning & Computational Intelligence & Statistical Methods\\
      & Algorithms for Large Scale Data  & Multivariate Statistics\\
@@ -72,7 +72,7 @@ Seminar in Deep Learning & Computational Intelligence & Statistical Methods\\
 \end{rSection}
 
 \begin{rSection}{Experience}
-{\bf Teaching Assistant}\hfill {\em Fall 2017 ---}
+{\bf Teaching Assistant}, Head/Sole \hfill {\em Fall 2017 ---}
 \begin{cvEnum}
 \item Design and Analysis of Algorithms, Introduction to Machine
   Learning, Data Structures and Algorithms, Introduction to Python Programming  
@@ -86,71 +86,45 @@ Seminar in Deep Learning & Computational Intelligence & Statistical Methods\\
 
 
 %----------------------------------------------------------------------------------------
-%	TECHNICAL STRENGTHS SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{SKILLS}
-
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Programming Languages \ & Python, JavaScript \\
-Scripting Languages \ & Bash, AWK, sed, \LaTeX, SQL \\
-Deep Learning Libraries \ & Pytorch, TensorFlow, Keras \\
-Machine Learning \& Data Manipulation Libraries \ & Scikit-Learn, Pandas, NumPy \\
-Visualization \ & Matplotlib, Seaborn\\
-Operating Systems \ & Linux\\
-Scientific Computing \& Containerization \ & OSG, Docker \\
-Software \& Tools \ & Emacs, Jupyter Notebooks \\
-Database Systems \ & MySQL, MongoDB \\
-Web Technologies \ & Node, Express, React, Redux, REST\\
-  Native \ & React Native
-
-\end{tabular}
-
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Projects}
 {\bf Research Projects}
 \begin{cvEnum}
-\item {\em Computer Vision:}
+\item {\large{\em Computer Vision:}}
  Develop and implement deep methods for computational jigsaw
-       puzzle solving. (\textbf{TDD, Python, OpenCV})
+       puzzle solving. Decreased search space using approximate
+       similarity search.\\
+       \textbf{Python, OpenCV, Tensorflow, Docker,
+       TDD}
+     \vspace{0.3cm}
 
-     \item {\em Biological molecule target prediction:} Predicted
-      binding interactions between biological molecules with Gaussian
-      Mixture Models using \textbf{Scikit-Learn \& Pandas}. Decreased model training time about 50{$\times$}
-      using
-      \textbf{distributed computing} (OSG) \textbf{Docker}
+   \item {\large {\em Biological molecule target prediction:}} Predicted
+     interactions between biological molecules with Gaussian
+     Mixture Models using \textbf{Scikit-Learn \& Pandas}.Simulations
+     were performed on a \textbf{distrib-uted
+       computing} setting (OSG) and \textbf{Docker}. Built my own workflow
+     using \textbf{Makefile, sed, AWK}.
 
-
+\begin{comment}
     \item {\em Deep similarity search:} Develop and implement methods
       to find similarity preserving embeddings of data using
       locality-sensitive hashing. (\textbf{TensorFlow \& Keras})
 
     \item {\em Deep Generative Models for Optimization Problems}: (Ongoing) Develop and implement methods to solve optimization problems. (\textbf{PyTorch, TensorFlow})
 
-
+\end{comment}
 \end{cvEnum}
 {\bf Side Projects}
-
-{\em Machine Learning}
-%    {\em Web technologies}
-%    \begin{cvEnum}
-%    \item Virtual drum set, Simon game
-%    \end{cvEnum}
-{\em Web \& Native Applications}
 \begin{cvEnum}
-  \item ToDo List
-  \item Games: Pong, Simon, Game of Life, Matching Game (\textbf{React, Redux})
-  \item Location-based job search app  (\textbf{React Native, Redux})
+\item {\large{\em Location-based job search app}}  \\\textbf{React Native,
+    Redux, Expo, REST, Firebase, Google Cloud Functions}
+  \vspace{0.3cm}
+\item {\large {\em ToDo List and games} (Pong, Simon, Game of Life, Matching
+    Game)} \\
+  \textbf{React, Redux, Node, Express, MongoDB, REST}
 
       \end{cvEnum}
-\begin{cvEnum}
-    \item Naive Bayes Classifier, Decision Tree Classifier (ID3)
-    \item Document similarity using Locality Sensitive Hashing
-    \end{cvEnum}
 
 
 \end{rSection}
@@ -165,16 +139,21 @@ Web Technologies \ & Node, Express, React, Redux, REST\\
 %\end{rSection}
 
 
-\begin{rSection}{Accomplishments, Service \& Leadership}
-
-Workshop Co-organizer, \href
-    {http://sbbi-panda.unl.edu/bibm2019/} {IRLB@IEEE BIBM,} {\em San Diego} \hfill{\em Nov 18-21 2019}\\
-Workshop Co-organizer, Support Vector Machines, UNMC, {\em Omaha} \hfill{\em 2019}\\
-Oral Presentation @IEEE BIBM, {\em Kansas City} \hfill{\em 2017}\\
-Subreviewer, IJCAI \hfill {\em 2018 ---}\\
-3 peer-reviewed articles in journals and conferences, 1 preprint\\
+\begin{rSection}{Achievements, Service \& Leadership}
 Head Teaching Assistant, {\em Design and Analysis of Algorithms}
 \hfill {\em August 2018 ---}\\
+3 peer-reviewed articles in journals and conferences, 1 preprint\\
+Paper presentation @IEEE BIBM, {\em Kansas City, MO} \hfill{\em 2017}\\
+Subreviewer, IJCAI \hfill {\em 2018 ---}\\
+Workshop Co-organizer, \href
+    {http://sbbi-panda.unl.edu/bibm2019/} {IRLB@IEEE BIBM,} {\em San
+      Diego, CA} \hfill{\em Nov 18-21 2019}\\
+Workshop Co-organizer, Support Vector Machines, UNMC, {\em Omaha, NE} \hfill{\em 2019}\\
+Graduate student representative, Faculty Committee \hfill{\em{Aug
+    2017-Aug 2018}}\\
+Graduate student representative, Computer Science Program Committee
+\hfill{\em{Aug 2019 ---}}\\
+
 \end{rSection}
 
 \end{document}
