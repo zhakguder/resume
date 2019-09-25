@@ -24,10 +24,11 @@
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
 % Document margins
-
+\usepackage{fontawesome}
 \usepackage{comment}
 \usepackage{hyperref}
 \usepackage{enumerate}
+\usepackage{comment}
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \newenvironment{cvEnum}
@@ -37,9 +38,12 @@
     \setlength{\parsep}{0pt}     }
 { \end{enumerate}                  }
 \name{Zeynep Hakguder} % Your name
-\address{539 N 24th St Apt 19, Lincoln, NE 68503} % Your address
-%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
-\address{+1 (402) 853-9069 \\ \href{mailto:zhakguder@cse.unl.edu}{zphakguder@gmail.com}} % Your phone number and email
+\address{\faHome \hspace{0.1em} 539 N 24th St Apt 19, Lincoln, NE 68503}
+\address{\faMobile \hspace{0.1em}  +1 (531) 218-8301 \\ \faEnvelope
+  \hspace{0.1em}
+  \href{mailto:zphakguder@gmail.com}{zphakguder@gmail.com} \\ 
+ \faGithub \hspace{0.1em}  \href{https://github.com/zhakguder}{https://github.com/zhakguder}}
+
 
 \begin{document}
 
@@ -49,19 +53,29 @@
 
 \begin{rSection}{Education}
 
-{\bf University of Nebraska-Lincoln} \hfill {\em August 2017 - May
-  2020 (Expected)}
-\\ PhD in Computer Science, \it{Machine Learning Specialization} \hfill { Cumulative GPA: 3.969 }
+  {\bf University of Nebraska-Lincoln} \hfill { August 2017 - May
+    2020} (Expected) 
+\\ PhD in Computer Science
 
+                        \small{
+\begin{tabular}{cc}
+{\bf Related Courses} &
+                        
+\begin{tabular}{lll}
+  \textbf{{\em Deep Learning}} & \textbf{{\em Machine Learning}} & \textbf{{\em Probability}} \\
+Pattern Recognition & Introduction to Machine Learning & Probability Theory\\
+Seminar in Deep Learning & Computational Intelligence & Statistical Methods\\
+     & Algorithms for Large Scale Data  & Multivariate Statistics\\
+\end{tabular}
+\end{tabular}
+                        }
 \end{rSection}
 
 \begin{rSection}{Experience}
-{\bf Teaching Assistant}
+{\bf Teaching Assistant}, Head/Sole \hfill {\em Fall 2017 ---}
 \begin{cvEnum}
-\item Design and Analysis of Algorithms  \hfill {\em Fall 2018 ---}
-\item Introduction to Machine Learning \hfill {\em Summer 2018}
-\item Data Structures and Algorithms \hfill {\em Summer 2017 \& Spring 2018}
-\item Introduction to Python Programming \hfill {\em Fall 2017}
+\item Design and Analysis of Algorithms, Introduction to Machine
+  Learning, Data Structures and Algorithms, Introduction to Python Programming  
 \end{cvEnum}
 {\bf Research Assistant} \hfill {\em January 2017-May 2018}
 \begin{cvEnum}
@@ -71,138 +85,77 @@
 \end{rSection}
 
 
-
-%----------------------------------------------------------------------------------------
-%	TECHNICAL STRENGTHS SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{SKILLS}
-
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Programming Languages \ & Python, JavaScript \\
-Scripting Languages \ & Bash, AWK, sed, \LaTeX, SQL \\
-Deep Learning Libraries \ & Pytorch, TensorFlow, Keras \\
-Machine Learning \& Data Manipulation Libraries \ & Scikit-Learn, Pandas, NumPy \\
-Visualization \ & Matplotlib, Seaborn\\
-Operating Systems \ & Linux\\
-Scientific Computing \& Containerization \ & OSG, Docker \\
-Software \& Tools \ & Emacs, Jupyter Notebooks \\
-Database Systems \ & MySQL, MongoDB \\
-Web Technologies \ & Node, Express, React, Redux, REST\\
-  Native \ & React Native
-
-\end{tabular}
-
-\end{rSection}
-
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Projects}
 {\bf Research Projects}
 \begin{cvEnum}
-\item {\em Computer Vision:}
-  \begin{itemize}
-    \item (Ongoing) Develop and implement methods to
-      identify pig posture. Achieved 98\% accuracy. (\textbf{TensorFlow})
-     \item (Ongoing) Develop and implement deep methods for computational jigsaw
-       puzzle solving. (\textbf{Test Driven Development, Python, OpenCV})
+\item {\large{\em Computer Vision:}}
+ Develop and implement deep methods for computational jigsaw
+       puzzle solving. Decreased search space using approximate
+       similarity search.\\
+       \textbf{Python, OpenCV, Tensorflow, Docker,
+       TDD}
+     \vspace{0.3cm}
 
-      \end{itemize}
-    \item {\em Deep reinforcement learning:} Contributed to
-      implementation of a reinforcement learning agent in different
-      game environments.  Mined agent action data. (\textbf{TensorFlow,
-        Keras, AWK})
+   \item {\large {\em Biological molecule target prediction:}} Predicted
+     interactions between biological molecules with Gaussian
+     Mixture Models using \textbf{Scikit-Learn \& Pandas}.Simulations
+     were performed on a \textbf{distrib-uted
+       computing} setting (OSG) and \textbf{Docker}. Built my own workflow
+     using \textbf{Makefile, sed, AWK}.
 
-    \item {\em Deep semantic hashing:} Develop and implement methods
+\begin{comment}
+    \item {\em Deep similarity search:} Develop and implement methods
       to find similarity preserving embeddings of data using
       locality-sensitive hashing. (\textbf{TensorFlow \& Keras})
 
     \item {\em Deep Generative Models for Optimization Problems}: (Ongoing) Develop and implement methods to solve optimization problems. (\textbf{PyTorch, TensorFlow})
 
-    \item {\em Biological molecule target prediction:} Predicted
-      binding interactions between biological molecules with Gaussian
-      Mixture Models. (\textbf{Scikit-Learn \& Pandas}, super computing
-      resources of \textbf{OSG}, and \textbf{Docker} for containerization)
-
+\end{comment}
 \end{cvEnum}
-\newpage
 {\bf Side Projects}
-
-{\em Machine Learning}
-%    {\em Web technologies}
-%    \begin{cvEnum}
-%    \item Virtual drum set, Simon game
-%    \end{cvEnum}
-{\em Web \& Native Applications}
 \begin{cvEnum}
-  \item ToDo List
-  \item Games: Pong, Simon, Game of Life, Matching Game (\textbf{React, Redux})
-  \item Location-based job search app  (\textbf{React Native, Redux})
+\item {\large{\em Location-based job search app}}  \\\textbf{React Native,
+    Redux, Expo, REST, Firebase, Google Cloud Functions}
+  \vspace{0.3cm}
+\item {\large {\em ToDo List and games} (Pong, Simon, Game of Life, Matching
+    Game)} \\
+  \textbf{React, Redux, Node, Express, MongoDB, REST}
 
       \end{cvEnum}
-\begin{cvEnum}
-    \item Naive Bayes Classifier, Decision Tree Classifier (ID3)
-    \item Document similarity using Locality Sensitive Hashing
-    \end{cvEnum}
 
 
 \end{rSection}
 
 
 
-%	EXAMPLE SECTION
-%----------------------------------------------------------------------------------------
 
-\begin{rSection}{Relevant Courses}
-{\em UNL}\\
-Pattern Recognition (Deep Learning), Seminar in Deep Learning (3 Semesters)
-\\Introduction to Machine Learning, Computational Intelligence (Neural Networks, Genetic Algorithms)
-\\Algorithms for Large Scale Data
-\\Statistical Methods in Research, Multivariate Statistics, Probability Theory\\
-{\em MOOC (Coursera)}\\
-Improving Deep Neural Networks, Structuring Machine Learning Projects
-\end{rSection}
+%\begin{rSection}{Relevant Courses}
+%{\em UNL}\\
+%{\em MOOC (Coursera)}\\
+%Improving Deep Neural Networks, Structuring Machine Learning Projects
+%\end{rSection}
 
 
-
-
-\begin{rSection}{Workshop \& Conference Presentations}
-
-{\bf Workshop on Support Vector Machines,} {\em University of Nebraska Medical Center} \hfill{\em 2019}
-\begin{cvEnum}
-    Co-organized the workshop, contributed to hands-on session material preparation \& presentation.
-\end{cvEnum}
-{\bf Oral Presentation at International IEEE Conference BIBM,} {\em Kansas City} \hfill{\em 2017}
-\end{rSection}
-\begin{rSection}{Publications}
+\begin{rSection}{Achievements, Service \& Leadership}
+Head Teaching Assistant, {\em Design and Analysis of Algorithms}
+\hfill {\em August 2018 ---}\\
+3 peer-reviewed articles in journals and conferences, 1 preprint\\
+Paper presentation @IEEE BIBM, {\em Kansas City, MO} \hfill{\em 2017}\\
+Subreviewer, IJCAI \hfill {\em 2018 ---}\\
+Workshop Co-organizer, \href
+    {http://sbbi-panda.unl.edu/bibm2019/} {IRLB@IEEE BIBM,} {\em San
+      Diego, CA} \hfill{\em Nov 18-21 2019}\\
+Workshop Co-organizer, Support Vector Machines, UNMC, {\em Omaha, NE} \hfill{\em 2019}\\
+Graduate student representative, Faculty Committee \hfill{\em{Aug
+    2017-Aug 2018}}\\
+Graduate student representative, Computer Science Program Committee
+\hfill{\em{Aug 2019 ---}}\\
 
 \end{rSection}
-Dong Xu, Eleanor Quint, {\bf Zeynep Hakguder}, Haluk Dogan, Stephen Scott, and Matthew Dwyer. "Constraining Action Sequences with Formal Languages for Deep Reinforcement Learning." (2018).
-\vspace*{0.05cm}
 
-{\bf Zeynep Hakguder}, Jiang Shu, Chunxiao Liao, Kaiyue Pan, and Juan Cui. "Genome-scale MicroRNA target prediction through clustering with Dirichlet process mixture model." BMC genomics 19, no. 7 (2018): 658.
-\vspace*{0.05cm}
-
-{\bf Zeynep Hakguder}, Chunxiao Liao, Jiang Shu, and Juan Cui. "A new statistical model for genome-scale MicroRNA target prediction." In 2017 IEEE International Conference on Bioinformatics and Biomedicine (BIBM), pp. 101-107. IEEE, 2017.
-\vspace*{0.05cm}
-
-{\bf Zeynep M. Hakguder}, Dicle Yalcin, and Hasan H. Otu. "Bioinformatics approaches to single-cell analysis in developmental biology." MHR: Basic science of reproductive medicine 22, no. 3 (2015): 182-192.
-
-\begin{rSection}{Academic Service}
- Subreviewer for IJCAI (International Joint Conferences on Artificial Intelligence) \hfill{2018 ---}
-\end{rSection}
-\begin{comment}
-\begin{rSection}{References}
-{\bf Stephen Scott,} {\em Advisor \& Instructor of Design and Analysis of Algorithms}
-\\
-{\bf Vinod Variyam,} {\em Advisor \& Instructor of Design and Analysis of Algorithms}
-\\
-{\bf Juan Cui,} {\em PI of SBBI \& Instructor of Introduction to Programming, Data Structures and Algorithms}
-\\
-{\bf Mohammad Hassan,} {\em Instructor of Introduction to Machine Learning}
-\end{rSection}
-\end{comment}
 \end{document}
 
 %%% Local Variables:
